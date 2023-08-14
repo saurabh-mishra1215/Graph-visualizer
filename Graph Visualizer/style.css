@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 5rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.node {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.start {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.end {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.blocked {
+  background-color: #34495e;
+  color: #fff;
+}
+
+#run-button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#reset-button {
+  padding: 10px 20px;
+  background-color: #ffc107;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#run-button:hover {
+  background-color: #2980b9;
+}
+
+#grid-size {
+  width: 50px;
+}
+
+#speed {
+  width: 150px;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-size, 10), 1fr);
+  grid-template-rows: repeat(var(--grid-size, 10), 1fr); /* Add this line */
+  gap: 1px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+/* ... (previous styles) */
+
+.node.visited {
+  background-color: #ffc107;
+}
+
+node.shortest-path {
+  background-color: #00bcd4; /* Change this to your desired color */
+}
+
+.shortest-path {
+  background-color: #00bcd4; /* Change this to your desired color */
+}
+
+.cool-header {
+  color: #000;
+  text-align: center;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.header-text {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.animated-text {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+}
+
+/* Footer Styles */
+.cool-footer {
+  color: #000;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer-text {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  transition: transform 0.2s;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
