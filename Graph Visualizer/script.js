@@ -266,7 +266,7 @@ function runAlgorithm() {
   }
 
   if (!endNode) {
-    throwError(alert, "danger", "<strong>No end node found!</strong> Where will you start huh?");
+    throwError(alert, "danger", "<strong>No end node found!</strong> Where will you End huh?");
     return;
   }
 
